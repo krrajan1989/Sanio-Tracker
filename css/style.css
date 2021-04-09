@@ -1,7 +1,41 @@
 body {
   overflow-x: hidden;
 }
+.main{
+	background-color: #fff9f9;
+	position: fixed;
+	top: 0;
+	z-index: 9999;
+	border-bottom: 2px solid rgba(152, 152, 152, 0.93);
+}
+.logo{
+	display: inline-block;
+	height: 80px;
+}
+.mob{
+	font-size: 20px;
+	font-weight: 700;
+}
+@import url(https://fonts.googleapis.com/css?family=Lato:700,900);
 
+.Hero_text{
+	display: inline-block;
+	font-size: 36px;
+	font-weight: 900;
+	text-transform: uppercase;
+	font-family: lato;
+	background: -webkit-linear-gradient(#23283c, #00fff5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.nav-border{
+	height: 8px; margin-top: 93px; background-color: rgba(55, 184, 239, 0.85);
+}
+@media only screen and (max-width : 767px){
+	.nav-border{
+		margin-top: 200px !important;
+	}
+}
 .navbar .nav-link {
   font-size: 14px;
   text-transform: uppercase;
@@ -18,18 +52,25 @@ body {
 }
 
 .carousel-image-1 {
-  background: url('../img/image1.jpg');
+  background: linear-gradient(rgba(0, 255, 255, 0.2), rgba(0, 255, 255, 0.2)),url('../img/img1.jpg');
+  background-attachment: fixed;
   background-size: cover;
+  background-position: center;
 }
 
 .carousel-image-2 {
-  background: url('../img/image2.jpg');
+  background: linear-gradient(rgba(0, 255, 255, 0.3), rgba(0, 255, 255, 0.3)), url('../img/img2.jpg');
   background-size: cover;
 }
 
 .carousel-image-3 {
-  background: url('../img/image3.jpg');
-  background-size: cover;
+  background: linear-gradient(rgba(0, 255, 255, 0.1), rgba(0, 255, 255, 0.1)), url('../img/img3.jpg');
+  background-attachment: fixed;
+  
+  background-position: center;	 
+}
+.hero-text{
+	display: inline-block;
 }
 
 #home-heading {
@@ -68,7 +109,7 @@ body {
 
 #page-header {
   height: 200px;
-  background: url('../img/image1.jpg');
+  background: url('../img/about.jpg');
   background-position: 0 -360px;
   background-attachment: fixed;
   color: #fff;
@@ -95,6 +136,5 @@ body {
 }
 
 #main-footer {
-  background: #000;
   color: #fff;
 }
